@@ -1,5 +1,7 @@
 import React from "react";
+
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 import Home from "./Home";
 import About from "./About";
 import UserProfile from "./UserProfile";
@@ -7,7 +9,8 @@ import NoMatch from "./NoMatch";
 import BackButton from "./BackButton";
 import ForwardButton from "./ForwardButton";
 import GoHomeButton from "./GoHomeButton";
-import "./App.css";
+import PostList from "./PostList";
+import User from "./User";
 
 function App() {
   return (
@@ -25,7 +28,7 @@ function App() {
           <About />
         </Route>
         <Route path="/users/:userId">
-          <UserProfile />
+          <User />
         </Route>
         <Route>
           <NoMatch />
